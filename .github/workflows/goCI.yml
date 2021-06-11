@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-go@v2.1.3
       with:
         # The Go version to download (if necessary) and use. Supports semver spec and ranges.
-        go-version: 1.16.5 # optional
+        go-version: 1.13.7 # optional
     - name: show Go Version # verify that go is install
       run: |
         go version # show the go version
