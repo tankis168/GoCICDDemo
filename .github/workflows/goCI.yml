@@ -2,6 +2,8 @@ name: CI setup for Go
 on: #on event keyword
   push:
     branches: [main] #identifying branch
+  pull_request:
+    branches: [main]
     
 jobs:
   my-job:
