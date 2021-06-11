@@ -42,5 +42,11 @@ jobs:
         ls
         cat myText.txt
         cd ..
+        
+    - name: Install dependencies for GO
+      run: |
+        go get github.com/franela/goblin # for test tool
+        go get github.com/tebeka/go2xunit # for conversion to xml
+        go test -v
     
     
