@@ -12,7 +12,7 @@ jobs:
 	  steps:
 	    - name: Check out codes
 	      uses: actions/checkout@v2
-     
+        
       - name: Validate the Go Codes
         uses: goreleaser/goreleaser-action@v2.6.1
         with:
