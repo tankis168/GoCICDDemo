@@ -8,7 +8,7 @@ on:
 jobs:
   release:
     name: Release on GitHub
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Re enter again
     steps:
       - name: Check out codes
         uses: actions/checkout@v2
