@@ -1,1 +1,26 @@
+name: Release of go code
 
+on:
+  create:
+    tags:
+      - v*
+      
+jobs:
+  release:
+    name: Release on GitHub
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out codes
+        uses: actions/checkout@v2
+        
+      - name: Validate the GO codes
+        uses: goreleaser/goreleaser-action@v2.6.1
+        with:
+          args: check
+          
+      - name: Release the GO codes
+        uses: goreleaser/goreleaser-action@v2.6.1
+        with:
+          args: release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
