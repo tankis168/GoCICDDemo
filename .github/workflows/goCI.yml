@@ -51,4 +51,9 @@ jobs:
         go test -v | go2xunit > report.xml # to generate XML report
         ls # list files
     
+    - name: Publish Unit Test Results
+      uses: EnricoMi/publish-unit-test-result-action@v1 # to read in xml report
+      if: always()
+      with:
+        files: report.xml #make use of a file we created
     
