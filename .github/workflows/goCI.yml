@@ -49,5 +49,6 @@ jobs:
         go get github.com/tebeka/go2xunit # for conversion to xml
         go test -v # command to rnu go test
         go test -v | go2xunit > report.xml # to generate XML report
+        ls # list files
     
     
