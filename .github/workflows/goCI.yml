@@ -21,3 +21,10 @@ jobs:
     - name: show Go Version # verify that go is install
       run: |
         go version # show the go version
+    - name: Checkout our codes
+      uses: actions/checkout@v2
+      
+    - name: Check file system
+      run: |
+        ls
+        cat calc.go # prints the content of calc.go
