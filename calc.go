@@ -3,7 +3,7 @@ package calc
 import "fmt"
 
 func main(){
-	fmt.Println("Hello")
+	fmt.Println("Hello !!")
 }
 
 // Add two numbers and return the result.
