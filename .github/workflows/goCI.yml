@@ -33,7 +33,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: lowkh2/GoSchoolRemoteExample # the hidden repo i am rtying to access
-        path: remoteRepo # Folder to save to in my virtual env
+        path: virtualRepoFolder # Folder to save to in my virtual env
         token: ${{ secrets.GO_SECRET }} #pass to enter the remote hidden repo
         
     - name: Show hidden files
