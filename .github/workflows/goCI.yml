@@ -1,1 +1,14 @@
-
+name: CI setup for Go
+on: #on event keyword
+  push:
+    branches: [main] #identifying branch
+    
+jobs:
+  my-job:
+    name: My Job
+    runs-on: ubuntu-latest #specify os in virtaul machine
+    steps:
+    - name: Print a greeting
+      run: |
+        ls
+        echo Hello there! #run terminal command
